@@ -1,7 +1,40 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>MY HTML & CSS - Design and Build Websites</title>
+        <style type="text/css">
+            body {
+                font-family: Arial, Verdana, sans-serif;
+                color: #665544;
+            }
+            div {
+                width: 300px;
+                float: left; /* 浮动使得div的纵向排列变为横向排列 */
+                padding: 20px;
+                margin: 0px;
+                vertical-align: top;
+            }
+            #container {
+                width: 7000px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .section {
+                float: left;
+                border: 1px solid #0088dd; 
+                padding: 20px;
+                margin: 20px;
+            }
+            .little {
+                font-size: 0.75em;
+                color: #665544;
+                float: right;
+            }
+        </style>
+    </head>
     <body>
-            <div>
+        <div id="container"> 
+            <div class="section">
                 <h1>HTML & CSS</h1>
                 <h2 id="contents">Contents</h2>
                 <ol>
@@ -11,7 +44,7 @@
                     <li><a href="#ten">Chapter 10: Introducing CSS</a></li>
                 </ol>
             </div>
-            <div>
+            <div class="section">
                 <h3 id="one">Chapter 1: Structure</h3>
                 <ul>
                     <li><a href="chapter-01/example.html">Example</a></li>
@@ -19,9 +52,9 @@
                     <li><a href="chapter-01/first-test.html">First Test</a></li>
                     <li><a href="chapter-01/view-source.html">View Source</a></li>
                 </ul>
-                <p><a href="#contents">back</a></p>
+                <p><a class="little" href="#contents">back</a></p>
             </div>
-            <div>
+            <div class="section">
                 <h3 id="three">Chapter 3: Lists</h3>
                 <ul>
                     <li><a href="chapter-03/ordered-lists.html">Ordered Lists</a></li>
@@ -30,9 +63,9 @@
                     <li><a href="chapter-03/nested-lists.html">Nested Lists</a></li>
                     <li><a href="chapter-03/example.html">Example</a></li>
                 </ul>
-                <p><a href="#contents">back</a></p>
+                <p><a class="little" href="#contents">back</a></p>
             </div>
-            <div>
+            <div class="section">
                 <h3 id="ten">Chapter 10: Introducing CSS</h3>
                 <ul>
                     <li><a href="chapter-10/thinking-inside-the-box-borderless.html">Thinking Inside the Box (Borderless)</a></li>
@@ -46,7 +79,8 @@
                     <li><a href="chapter-10/cascade.html">How CSS Rules Cascade</a></li>
                     <li><a href="chapter-10/inheritance.html">Inheritance</a></li>
                 </ul>
-                <p><a href="#contents">back</a></p>
+                <p><a class="little" href="#contents">back</a></p>
             </div>
+        </div>
     </body>
 </html>
