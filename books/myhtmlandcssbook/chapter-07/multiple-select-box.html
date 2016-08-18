@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Multiple Select Box</title>
+    </head>
+    <body>
+        <form action="http://123.56.21.232:8090/form.php" method="get">
+            <p>Do you play any of the following instruments? (You can select more than one option by holding down control on a PC or command key on a Mac while selecting different options.)</p>
+            <!-- size为显示的条数 -->
+            <!-- 如果不带multiple和multiple参数，则为下拉列表; 只要携带一个则为多选框 -->
+            <select name="instruments" size="3" multiple="multiple">
+                <option value="guitar" selected="selected">Guitar</option>
+                <option value="drums">Drums</option>
+                <option value="keyboard" selected="selected">Keyboard</option>
+                <option value="bass">Bass</option>
+            </select>
+        </form>
+    </body>
+</html>

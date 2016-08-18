@@ -6,7 +6,8 @@
         <form action="http://123.56.21.232:8090/form.php" method="get">
             <p>What device do you listen to music on?</p>
             <select name="devices">
-                <option value="ipod">iPod</option>
+                <!-- 下拉列表为多选一，如果有多个option被selected，则只有最后一个会生效 -->
+                <option value="ipod" selected="selected">iPod</option>
                 <option value="radio">Radio</option>
                 <option value="computer">Computer</option>
             </select>
