@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Checkbox</title>
+    </head>
+    <body>
+        <form action="http://123.56.21.232:8090/form.php" method="get">
+            <p>Please select your favorite music service(s): 
+                <!-- <br />表示换行 -->
+                <br />
+                <!-- <input>为内联元素 -->
+                <!-- 3个checkbox的name必须一致, 否则就可以同时选择多个radio button -->
+                <!-- value为选中情况时，表单提交会携带的值 -->
+                <input type="checkbox" name="service" value="itunes" checked="checked" /> iTunes
+                <input type="checkbox" name="service" value="lastfm" /> Last.fm
+                <input type="checkbox" name="service" value="spotify" /> Spotify
+            </p>
+        </form>
+    </body>
+</html>
