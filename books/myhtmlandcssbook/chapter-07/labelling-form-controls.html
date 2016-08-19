@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Labelling Form Controls</title>
+    </head>
+    <body>
+        <form action="http://123.56.21.232:8090/form.php" method="post">
+            <!-- 使用方法1：label将表单说明和表单输入框全部包围起来 -->
+            <label>Age: <input type="text" name="age" /></label>
+            <!-- 使用方法2：label与表单控件分开，使用for特性来指明<label>元素所关联的表单控件-->
+            <br />
+            Gender:
+            <input id="female" type="radio" name="gender" value="f" />
+            <!-- for特性值对应某个表单控件的id特性值 -->
+            <label for="female">Female</label>
+            <input id="male" type="radio" name="gender" value="m" />
+            <label for="male">Male</label>
+        </form>
+    </body>
+</html>
