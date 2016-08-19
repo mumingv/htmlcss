@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>HTML5 Form Validation</title>
+    </head>
+    <body>
+        <form action="http://123.56.21.232:8090/form.php" method="post">
+            <!-- HTML5开始，可以由HTML来完成表单的验证工作；之前版本都是由JS来完成该项工作 -->
+            <!-- required特性指明该表单元素用户必须填写，不能为空 -->
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required="required" /><br />
+            <label for="password">Password:</label>
+            <input type="text" name="password" id="password" required="required" />
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
