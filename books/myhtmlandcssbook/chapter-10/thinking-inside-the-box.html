@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Understanding CSS - Thinking Inside the Box</title>
+        <style type="text/css">
+            body {
+                font-family: Helvetica, Arial, sans-serif; /* 实际使用的是Arial字体 */
+                color: #665544; /* 带点灰色，看上去柔和一点 */
+                border: 2px solid #e7642c; /* boder属性不会被继承 */
+                padding: 20px; /* 元素的内容到边框的距离 */
+            }
+            h1, h2, p {
+                border: 2px solid #e7642c; /* boder属性不会被继承 */
+                padding: 10px; /* 使得标题和内容看上去松散一点 */
+                line-height: 2em; /* em是字体的默认高度，1em = 16px */
+            }
+            i, a, a:hover, a:visited { /* 元素名称后面的冒号表示所属的事件 */
+                border: 2px solid #7fcbae; /* boder属性不会被继承 */
+                color: #665544; /* 针对a元素的悬停和点击时，颜色保持和文本一致 */
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The Cottage Garden</h1>
+
+        <p>The <i>cottage garden</i> is a distinct style of garden that uses an informal design, dense plantings, and a mixture of ornamental and edible plants.</p>
+
+        <p>The Cottage Garden originated in <a href="">England</a> and its history can be traced back for centuries, although they were re-invented in 1870's England, when stylized versions were formed as a reaction to the more structured and rigorously maintained <a href="">English estate gardens</a>.</p>
+
+        <p>The earliest cottage gardens were more practical than their modern descendants, with an emphasis on vegetables and herbs, along with some fruit trees.</p>
+    </body>
+</html>
