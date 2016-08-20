@@ -1,0 +1,8 @@
+body {
+    /* 注释不能使用// */
+    font-family: arial;  /* 字体名称大小写不敏感 */
+    background-color: rgb(185,179,175);
+}
+h1 {
+    color: rgb(255,255,255); 
+}
