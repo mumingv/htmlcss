@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <form action="http://123.56.21.232:8090/form.php" method="post">
+            <fieldset>
+                <legend>Your Details:</legend>
+                Name: <input type="text" size="30" name="name" maxlength="100" /><br />
+                Email: <input type="text" size="30" name="email" maxlength="100" /><br />
+            </fieldset>
+            <br />
+            <fieldset>
+                <br />
+                <legend>Your Review:</legend>
+                How did you hear about us? 
+                <select name="referrer">
+                    <option value="google">Google</option>
+                    <option value="friend">Friend</option>
+                    <option value="advert">Advert</option>
+                    <option value="other">Other</option>
+                </select>
+                <br />
+                <br />
+                Would you visit again?
+                <br />
+                <input type="radio" name="visit" value="yes" /> Yes
+                <input type="radio" name="visit" value="no" /> No
+                <input type="radio" name="visit" value="maybe" /> Maybe
+                <br />
+                <br />
+                Comments:
+                <br />
+                <textarea name="comments" cols="30" rows="4"></textarea>
+                <br />
+                <br />
+                <input type="checkbox" name="sign" value="sign" checked="checked" />
+                Sign me up for email updates
+                <br />
+                <input type="submit" name="submit" value="Submit review" />
+            </fieldset>
+        </form>
+    </body>
+</html>
