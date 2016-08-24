@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Link Visited</title>
-		<style type="text/css">
-			a:link {
-                color: deeppink;
-                text-decoration: none;}
-            a:visited {
-                color: black;}
+    <head>
+        <title>First Letter and Line</title>
+        <style type="text/css">
+            /* :link是伪类, 表示链接被点击之前的样式 */
+            a:link {
+                color: deeppink; 
+                /* 去除下划线 */
+                text-decoration: none;
+            }
+            /* :hover是伪类, 表示鼠标放在链接上的样式 */
             a:hover {
-                color: deeppink;
-                text-decoration: underline;}
+                color: deeppink; 
+                text-decoration: underline;
+            }
+            /* :active是伪类, 表示鼠标点击链接后未松开鼠标时的样式 */
             a:active {
-                color: darkcyan;}
-		</style>
-	</head>
-	<body>
-		<h1>Dog Breeds: <span style="color: deeppink;">B</span></h1>
-		<ul>
+                color: darkcyan; 
+            }
+            /* :visited是伪类, 表示链接被点击之后的样式 */
+            a:visited {
+                color: black; 
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Dog Breeds: <span style="color: deeppink;">B</span></h1>
+        <ul>
 			<li><a href="http://en.wikipedia.org/wiki/Basset_Hound">Basset Hound</a></li>
 			<li><a href="http://en.wikipedia.org/wiki/Beagle">Beagle</a></li>
 			<li><a href="http://en.wikipedia.org/wiki/Bearded_Collie">Bearded Collie</a></li>
@@ -25,7 +34,7 @@
 			<li><a href="http://en.wikipedia.org/wiki/Bedlington_Terrier">Bedlington Terrier</a></li>
 			<li><a href="http://en.wikipedia.org/wiki/Belgian_Shepherd_Dog_(Groenendael)">Belgian Shepherd</a></li>
 			<li><a href="http://en.wikipedia.org/wiki/Bergamasco_Shepherd">Bergamasco</a></li>
-			<li><a href="http://en.wikipedia.org/wiki/Bichon_Fris�">Bichon Frise</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Bichon_Frisé">Bichon Frise</a></li>
 			<li><a href="http://en.wikipedia.org/wiki/Bloodhound">Bloodhound</a></li>
 			<li><a href="http://en.wikipedia.org/wiki/Bolognese_(dog)">Bolognese</a></li>
 			<li><a href="http://en.wikipedia.org/wiki/Border_Collie">Border Collie</a></li>
@@ -35,6 +44,6 @@
 			<li><a href="http://en.wikipedia.org/wiki/Briard">Briard</a></li>
 			<li><a href="http://en.wikipedia.org/wiki/Bull_Terrier">Bull Terrier</a></li>
 			<li><a href="http://en.wikipedia.org/wiki/Bulldog">Bulldog</a></li>
-		</ul>
-	</body>
+        </ul>
+    </body>
 </html>
