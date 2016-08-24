@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Text Indent</title>
+        <title>Text Shadow</title>
         <style type="text/css">
             p {
                 font-size: 200%;
@@ -11,6 +11,28 @@
             p.one {
                 color: #666666;
                 background-color: #eeeeee;
+                /* 投影属性四个参数的含义：左右延伸距离、上下延伸距离、模糊程度，颜色值 */
+                text-shadow: 1px 1px 0px #000000;
+            }
+            p.two {
+                color: #666666;
+                background-color: #dddddd;
+                text-shadow: 1px 1px 3px #666666;
+            }
+            p.three {
+                color: #ffffff;
+                background-color: #cccccc;
+                text-shadow: 2px 2px 7px #111111;
+            }
+            p.four {
+                color: #cccccc;
+                background-color: #bbbbbb;
+                text-shadow: -1px -2px #666666;
+            }
+            p.five {
+                color: #ffffff;
+                background-color: #aaaaaa;
+                text-shadow: -1px -1px #666666;
             }
         </style>
     </head>
