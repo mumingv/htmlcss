@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Box Shadow</title>
+		<style type="text/css">
+            p {
+                width: 100px;   
+                height: 100px;
+                background-color: #e1ddda;
+                margin: 20px;
+                display: inline-block;
+            }
+            p.one {
+                /* 第一个长度为水平偏移 */
+                /* 第二个长度为垂直偏移 */
+                /* 第三个长度为模糊距离，未设置模糊距离，显示为实边 */
+                -moz-box-shadow: -5px -5px #777777; 
+                -webkit-box-shadow: -5px -5px #777777; 
+                box-shadow: -5px -5px #777777; 
+            }
+            p.two {
+                /* 第三个长度为模糊距离 */
+                -moz-box-shadow: 5px 5px 5px #777777; 
+                -webkit-box-shadow: 5px 5px 5px #777777; 
+                box-shadow: 5px 5px 5px #777777; 
+            }
+            p.three {
+                /* 第四个长度为阴影扩展 */
+                -moz-box-shadow: 5px 5px 5px 5px #777777; 
+                -webkit-box-shadow: 5px 5px 5px 5px #777777; 
+                box-shadow: 5px 5px 5px 5px #777777; 
+            }
+            p.four {
+                -moz-box-shadow: 0px 0px 10px #777777; 
+                -webkit-box-shadow: 0px 0px 10px #777777;
+                box-shadow: 0px 0px 10px #777777;
+            }
+            p.five {
+                /* inset用于创建内部阴影 */
+                -moz-box-shadow: inset 0px 0px 10px #777777; 
+                -webkit-box-shadow: inset 0px 0px 10px #777777;
+                box-shadow: inset 0px 0px 10px #777777;
+            }
+		</style>
+	</head>
+	<body>
+        <p class="one"></p>
+        <p class="two"></p>
+        <p class="three"></p>
+        <br />
+        <p class="four"></p>
+        <p class="five"></p>
+	</body>
+</html>
