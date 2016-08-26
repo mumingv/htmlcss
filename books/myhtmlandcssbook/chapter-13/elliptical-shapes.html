@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Elliptical Shapes</title>
+		<style type="text/css">
+            p {
+                border: 5px solid #ee3e80;                
+                padding: 10px;
+                margin: 20px;
+                width: 100px;
+                height: 100px;
+                display: inline-block;
+            }
+            p.one {
+                /* 针对做左上角进行设置: 横向半径 纵向半径 */
+                border-top-left-radius: 80px 50px;
+                -moz-border-top-left-radius: 80px 50px;
+                -webkit-border-top-left-radius: 80px 50px;
+            }
+            p.two {
+                /* 针对四个角进行设置：四个横向半径 / 四个纵向半径 */ 
+                border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+                -moz-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+                -webkit-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+            }
+            p.three {
+                /* 圆 */
+                padding: 0px;
+                border-radius: 100px;
+            }
+		</style>
+	</head>
+	<body>
+        <p class="one"></p>
+        <p class="two"></p>
+        <p class="three"></p>
+	</body>
+</html>
