@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Adding a Flash MP3 Player</title>
+		<script type="text/javascript" src="swfobject.js"></script>
+		<script type="text/javascript">
+			var flashvars = {};
+            /* 音频的路径是基于当前html文件而言的, 视频是基于播放器文件而言的 */
+			var params = {mp3: "audio/test-audio.mp3"};
+            /* 第1个参数：音频播放器 */
+			swfobject.embedSWF("flash/player_mp3_1.0.0.swf", "music-player", "200", "20", "8.0.0", flashvars, params);
+		</script>
+	</head>
+	<body>
+		<div id="music-player">
+			<p>You cannot hear this track because this browser does not support our Flash music player.</p>
+		</div>
+	</body>
+</html>
