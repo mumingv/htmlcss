@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Layout</title>
+        <link rel="stylesheet" type="text/css" href="css/960_12_col.css" />
+        <style>
+            #all {
+                /*border: 1px solid #efefef;*/
+                /* 该div中包含的元素全部使用float属性时，边框会变成一条直线，需要增加该overflow属性  */
+                /*overflow: auto;*/
+            }
+            * {
+                font-family: Arial, Verdana, sans-serif;
+                color: #665544;
+                text-align: center;
+            }
+            #nav, #feature, .article, #footer {
+                background-color: #efefef;
+                margin-top: 20px;
+                padding: 10px 0px 5px 0px;
+            }
+            #feature, .article {
+                height: 100px;
+            }
+            li {
+                /* list横向排列 */
+                display: inline;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- container_12表明该元素是整个页面的容器(960px)，并且使用了12列的网格(每列宽度60px，左右边距各10px) -->
+        <div id="all" class="container_12">
+            <!-- grid_12表明创建一个占据12列宽度的区块(左右两边各有10px的margin) -->
+            <div class="grid_12">
+                <h1>Logo</h1>
+                <div id="nav">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="feature" class="grid_12">
+                <p>Feature</p>
+            </div>
+            <!-- grid_4表明创建一个占据4列宽度的区块(连续三个grid_4会在一行显示) -->
+            <div class="grid_4 article">
+                <p>Column One</p>
+            </div>
+            <div class="grid_4 article">
+                <p>Column Two</p>
+            </div>
+            <div class="grid_4 article">
+                <p>Column Three</p>
+            </div>
+            <div id="footer" class="grid_12">
+                <p>&copy; Copyright 2011</p>
+            </div>
+        </div><!-- .container_12 -->
+    </body>
+</html>
