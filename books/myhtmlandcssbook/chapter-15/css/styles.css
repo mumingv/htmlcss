@@ -2,13 +2,20 @@
 
 @import url("tables.css");
 @import url("typography.css");
-body {	color: #666666;
-	background-color: #f8f8f8;
-	text-align: center;}#page {
-	width: 600px;
-	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-	border: 1px solid #d6d6d6;
-	padding: 20px;}h3 {
-	color: #547ca0;}
+
+body {
+    color: #666666;
+    background-color: #f8f8f8;
+    text-align: center;  /* text-align属性对表格不生效 */
+}
+#page {
+    width: 600px; 
+    text-align: left;  /* 这条属性会覆盖父元素body中的同名属性 */
+    margin-left: auto;  /* 如果只设置margin-left的auto，整个div将会靠窗口的右侧对齐 */
+    margin-right: auto;  /* 如果只设置margin-right的auto，整个div将会靠窗口的左侧对齐 */
+    border: 1px solid #d6d6d6;
+    padding: 20px;
+}
+h3 {
+    color: #547ca0;
+}

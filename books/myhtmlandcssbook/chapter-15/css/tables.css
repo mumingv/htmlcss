@@ -1,37 +1,48 @@
 /* Tables */
 
 table {
-	border-spacing: 0px;}
+    border-spacing: 0px;  /* 设置相邻单元格之间的距离为0 */
+}
 th, td {
-	padding: 5px 30px 5px 10px;
-	border-spacing: 0px;
-	font-size: 90%;
-	margin: 0px;}
+    padding: 5px 30px 5px 10px;
+    /*border-spacing: 0px;*/
+    font-size: 90%;
+    margin: 0px;
+}
 th, td {
-	color: #737476;
-	text-align: left;
-	background-color: #e0e9f0;
-	border-top: 1px solid #f1f8fe;
-	border-bottom: 1px solid #cbd2d8;
-	border-right: 1px solid #cbd2d8;}
+    color: #737476;
+    text-align: left;
+    background-color: #e0e9f0;
+    border-top: 1px solid #f1f8fe;  /* 偏白色上边框 */
+    border-bottom: 1px solid #cbd2d8;  /* 和border-top一起构成凹陷的效果 */
+    border-right: 1px solid #cbd2d8;  /* 和border-top一起构成凹陷的效果 */
+}
 tr.head th {
-	color: #fff;
-	background-color: #90b4d6;
-	border-bottom: 2px solid #547ca0;
-	border-right: 1px solid #749abe;
-	border-top: 1px solid #90b4d6;
-	text-align: center;
-	text-shadow: -1px -1px 1px #666;
-	letter-spacing: 0.15em;}
+    color: #fff;
+    background-color: #90b4d6;
+    border-bottom: 2px solid #547ca0;
+    border-right: 1px solid #749abe;
+    border-top: 1px solid #90b4d6;
+    text-align: center;
+    text-shadow: -1px -1px 1px #666;  /* 该属性的四个参数：左右距离、上下距离、模糊程度、颜色 */
+    letter-spacing: 0.15em;
+}
+/* th:first-child选择属于父元素的第一个子元素的每个<th>元素 */
 tr.head th:first-child {
-	-webkit-border-top-left-radius: 5px;
-	-moz-border-radius-topleft: 5px;
-	border-top-left-radius: 5px;}
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
+}
+/* th:last-child选择属于父元素的最后一个子元素的每个<th>元素 */
 tr.head th:last-child {
-	-webkit-border-top-right-radius: 5px;
-	-moz-border-radius-topright: 5px;
-	border-top-right-radius: 5px;}
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;
+}
 td {
-	text-shadow: 1px 1px 1px #fff;}
+    text-shadow: 1px 1px 1px #fff;
+}
+/* 未设置even类，该CSS不生效 */
 tr.even td, tr.even th {
-	background-color: #e8eff5;}
+    background-color: #e8eff5;
+}
