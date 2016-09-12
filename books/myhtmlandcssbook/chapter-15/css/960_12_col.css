@@ -20,6 +20,7 @@ body {
 /* `Containers
 ----------------------------------------------------------------------------------------------------*/
 
+/* 960px宽的容器，共分为12列，每列80px(内容60px，左右边距各10px) */
 .container_12 {
   margin-left: auto;
   margin-right: auto;
@@ -29,6 +30,7 @@ body {
 /* `Grid >> Global
 ----------------------------------------------------------------------------------------------------*/
 
+/* 网格，后面的数字表示占用的列数 */
 .grid_1,
 .grid_2,
 .grid_3,
@@ -41,12 +43,13 @@ body {
 .grid_10,
 .grid_11,
 .grid_12 {
-  display: inline;
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  display: inline;  /* 显示为内联元素 */
+  float: left;  /* 向左浮动: 在父元素内尽可能向左移动 */
+  margin-left: 10px;  /* 左边距 */
+  margin-right: 10px;  /* 右边距 */
 }
 
+/* push往右推，pull往左拉 */
 .push_1, .pull_1,
 .push_2, .pull_2,
 .push_3, .pull_3,
@@ -58,16 +61,18 @@ body {
 .push_9, .pull_9,
 .push_10, .pull_10,
 .push_11, .pull_11 {
-  position: relative;
+  position: relative;  /* 相对定位：基于在普通流中的位置进行定位 */
 }
 
 /* `Grid >> Children (Alpha ~ First, Omega ~ Last)
 ----------------------------------------------------------------------------------------------------*/
 
+/* alpha表示左边距为0 */
 .alpha {
   margin-left: 0;
 }
 
+/* omega表示右边距为0 */
 .omega {
   margin-right: 0;
 }
@@ -75,6 +80,8 @@ body {
 /* `Grid >> 12 Columns
 ----------------------------------------------------------------------------------------------------*/
 
+/* 占用多列的格子，其宽度等于：列数*80px-20px，其中20px为格子整体的左右边距 */
+/* 格子只设置宽度 */
 .container_12 .grid_1 {
   width: 60px;
 }
@@ -126,6 +133,7 @@ body {
 /* `Prefix Extra Space >> 12 Columns
 ----------------------------------------------------------------------------------------------------*/
 
+/* prefix只设置左填充，填充的大小为：列数*80px */
 .container_12 .prefix_1 {
   padding-left: 80px;
 }
@@ -173,6 +181,7 @@ body {
 /* `Suffix Extra Space >> 12 Columns
 ----------------------------------------------------------------------------------------------------*/
 
+/* suffix只设置右填充，填充的大小为：列数*80px */
 .container_12 .suffix_1 {
   padding-right: 80px;
 }
@@ -220,12 +229,15 @@ body {
 /* `Push Space >> 12 Columns
 ----------------------------------------------------------------------------------------------------*/
 
+/* push往右推 */
+
+/* 容器类元素的后代元素(该后代元素含有类名为push_1的类) */
 .container_12 .push_1 {
-  left: 80px;
+  left: 80px;  /* 相对定位，左侧距离在普通流中的位置相差80px(即：往右移动80px) */
 }
 
 .container_12 .push_2 {
-  left: 160px;
+  left: 160px;  /* 相对定位，左侧距离在普通流中的位置相差160px(即：往右移动160px) */
 }
 
 .container_12 .push_3 {
@@ -266,6 +278,8 @@ body {
 
 /* `Pull Space >> 12 Columns
 ----------------------------------------------------------------------------------------------------*/
+
+/* pull往左拉 */
 
 .container_12 .pull_1 {
   left: -80px;
@@ -329,9 +343,9 @@ body {
 
 .clearfix:before,
 .clearfix:after {
-  content: '\0020';
+  content: '\0020';  /* 在每个.clearfix元素的前后插入空格 */
   display: block;
-  overflow: hidden;
+  overflow: hidden;  /* 将溢出盒子的部分隐藏 */
   visibility: hidden;
   width: 0;
   height: 0;
